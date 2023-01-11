@@ -35,3 +35,14 @@ a#img_link{
   font-size: 18px;
   padding: 30px 20px;
 }
+
+.container{
+  display: flex;
+  background: #F7F7F9;
+}
+
+#banner_area{
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/assets/images/header-shapes mobile@2x.svg");
+}
