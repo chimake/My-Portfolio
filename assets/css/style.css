@@ -1,34 +1,33 @@
-:root{
-  --white-color: #ffffff;
-  --black-shade-header: #172B4D;
+:root {
+  --white-color: #fff;
+  --blue-shade-text: #7f8cff;
   --black-shade-subtitle: #344563;
-  --blue-shade-paragraph: #7F8CFF; 
-  --white-shade-background: #F7F7F9;
-  --default: Poppins;
+  --white-shade-background: #f7f7f9;
+  --default: poppins;
 }
 
-*{
+* {
   font-family: var(--default);
   padding: 0;
   margin: 0;
 }
 
-#header{
+#header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
-#header div{
+#header div {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
   background-color: var(--white-color);
   width: 100%;
 }
 
-a#my_logo{
+a#my_logo {
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
@@ -36,69 +35,62 @@ a#my_logo{
   padding: 30px 20px;
 }
 
-a#img_link{
+a#img_link {
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
   padding: 30px 20px;
 }
 
-
-#banner_area{    
-  display: flex; 
+#banner_area {
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   background-image: url("../images/header-shapes-mobile@2x.svg");
   background-color: var(--white-shade-background);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* See 
-  * background:  no-repeat center center / cover;
-  * https://www.quora.com/What-is-center-center-cover-in-CSS-How-do-I-get-used-to-using-all-these
-  * https://stackoverflow.com/questions/29859864/no-repeat-center-center-vs-cover/29859939#29859939
-  */
   text-align: left;
   height: 100vh;
   flex: 1;
   padding: 50px 30px;
 }
 
-#name_title{
+#name_title {
   font-weight: 700;
-  font-size: 40px;  
+  font-size: 40px;
   line-height: 52px;
-  color: var(--black-shade-header);
+  color: var(--blue-shade-text);
 }
 
-#subtitle{
+#subtitle {
   font-weight: 400;
-font-size: 16px;
+  font-size: 16px;
   line-height: 24px;
   color: var(--black-shade-subtitle);
 }
 
-#mini_title{  
+#mini_title {
   font-weight: 700;
   font-size: 16px;
   line-height: 44px;
   text-align: left;
-  color: var(--blue-shade-paragraph);
+  color: var(--blue-shade-text);
 }
 
-ul{
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-li{
+li {
   display: inline;
   margin: -5px;
-  padding: 0px;
 }
 
-.icon_image{
+.icon_image {
   padding: 10px;
 }
