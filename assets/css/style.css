@@ -1,9 +1,7 @@
 :root{
-  --white-color: #ffffff;
-  --black-shade-header: #172B4D;
+  --white-color: #fff;
+  --black-shade-text: #7f8cff;
   --black-shade-subtitle: #344563;
-  --blue-shade-paragraph: #7F8CFF; 
-  --white-shade-background: #F7F7F9;
-  --default: Poppins;
+  --white-shade-background: #f7f7f9;
+  --default: poppins;
 }
-
