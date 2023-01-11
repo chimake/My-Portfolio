@@ -1,14 +1,9 @@
-<<<<<<< HEAD
 :root {
   --white-color: #fff;
   --blue-shade-text: #7f8cff;
   --black-shade-subtitle: #344563;
   --white-shade-background: #f7f7f9;
   --default: poppins;
-}
-=======
-:root{
-  --white-color: #ffffff;
 }
 
 *{
@@ -40,4 +35,3 @@ a#img_link{
   font-size: 18px;
   padding: 30px 20px;
 }
->>>>>>> 1a6b03f (Style header section)
