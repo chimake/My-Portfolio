@@ -43,10 +43,6 @@ a#img_link{
   padding: 30px 20px;
 }
 
-/* .container{
-  display: flex;
-  background: #F7F7F9;
-} */
 
 #banner_area{    
   display: flex; 
@@ -61,6 +57,7 @@ a#img_link{
   /* See 
   * background:  no-repeat center center / cover;
   * https://www.quora.com/What-is-center-center-cover-in-CSS-How-do-I-get-used-to-using-all-these
+  * https://stackoverflow.com/questions/29859864/no-repeat-center-center-vs-cover/29859939#29859939
   */
   text-align: left;
   height: 100vh;
