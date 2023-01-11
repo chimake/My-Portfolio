@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --white-color: #fff;
   --blue-shade-text: #7f8cff;
@@ -5,3 +6,38 @@
   --white-shade-background: #f7f7f9;
   --default: poppins;
 }
+=======
+:root{
+  --white-color: #ffffff;
+}
+
+*{
+  font-family: Poppins;
+  padding: 0;
+  margin: 0;
+}
+
+#header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white-color);
+  width: 100%;
+}
+
+a#my_logo{
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 30px 20px;
+}
+
+a#img_link{
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 30px 20px;
+}
+>>>>>>> 1a6b03f (Style header section)
