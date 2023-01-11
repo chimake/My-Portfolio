@@ -1,22 +1,29 @@
-:root {
-  --white-color: #fff;
-  --blue-shade-text: #7f8cff;
+:root{
+  --white-color: #ffffff;
+  --black-shade-header: #172B4D;
   --black-shade-subtitle: #344563;
-  --white-shade-background: #f7f7f9;
-  --default: poppins;
+  --blue-shade-paragraph: #7F8CFF; 
+  --white-shade-background: #F7F7F9;
+  --default: Poppins;
 }
 
 *{
-  font-family: Poppins;
+  font-family: var(--default);
   padding: 0;
   margin: 0;
 }
 
 #header{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;  
+}
+
+#header div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
   background-color: var(--white-color);
   width: 100%;
 }
@@ -36,13 +43,65 @@ a#img_link{
   padding: 30px 20px;
 }
 
-.container{
+/* .container{
   display: flex;
   background: #F7F7F9;
+} */
+
+#banner_area{    
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  background-image: url("../images/header-shapes-mobile@2x.svg");
+  background-color: var(--white-shade-background);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* See 
+  * background:  no-repeat center center / cover;
+  * https://www.quora.com/What-is-center-center-cover-in-CSS-How-do-I-get-used-to-using-all-these
+  */
+  text-align: left;
+  height: 100vh;
+  flex: 1;
+  padding: 50px 30px;
 }
 
-#banner_area{
-  display: flex;
-  flex-direction: column;
-  background-image: url("../images/assets/images/header-shapes mobile@2x.svg");
+#name_title{
+  font-weight: 700;
+  font-size: 40px;  
+  line-height: 52px;
+  color: var(--black-shade-header);
+}
+
+#subtitle{
+  font-weight: 400;
+font-size: 16px;
+  line-height: 24px;
+  color: var(--black-shade-subtitle);
+}
+
+#mini_title{  
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 44px;
+  text-align: left;
+  color: var(--blue-shade-paragraph);
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  display: inline;
+  margin: -5px;
+  padding: 0px;
+}
+
+.icon_image{
+  padding: 10px;
 }
