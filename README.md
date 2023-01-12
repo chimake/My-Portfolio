@@ -1,8 +1,10 @@
 <a name="readme-top"></a>
+
 <!-- PROJECT NAME -->
 # 📖 My Portfolio <a name="about-project"></a>
 
 *Chimobi Ogudu (Chima)** My name a proper subheading to come
+
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -28,11 +30,14 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
+<!-- About Me -->
 <a name="about-me"></a>
-# 📖 Hello Microverse! <a name="about-project"></a>
+<!-- PROJECT DESCRIPTION -->
 
-**Hello Microverse!** is a basic mobile build of my project
+# 📖 My Portfolio <a name="about-project"></a>
+
+**My Portfolio** is my basic portfolio more parts of the portfolio to come!
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -53,9 +58,8 @@
 
 - **Simple well structed html page optimized for SEO**
 - **Simple external CSS file**
-- **External image files**
-- **Poppin fonts googlr cdn**
-- **Basic CSS styling with flex box for responsive portfolio**
+- **Basic CSS responsive styling for header**
+- **Basic CSS responsive styling for banner**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -64,7 +68,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://chimake.github.io/Hello-world/)
+
+- [Live Demo Link]([https://chimake.github.io/Hello-world/](https://chimake.github.io/My-Portfolio/))
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
