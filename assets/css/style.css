@@ -1,6 +1,7 @@
 :root {
   --white-color: #fff;
   --blue-shade-text: #7f8cff;
+  --black-shade-title: #172b4d;
   --black-shade-subtitle: #344563;
   --white-shade-background: #f7f7f9;
   --default: poppins;
@@ -45,7 +46,7 @@ a#img_link {
 #banner_area {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-image: url("../images/header-shapes-mobile@2x.svg");
   background-color: var(--white-color);
@@ -53,16 +54,14 @@ a#img_link {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: left;
-  height: 100vh;
-  flex: 1;
-  padding: 10px;
+  padding: 50px 30px 50px 30px;
 }
 
 #name_title {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: var(--blue-shade-text);
+  color: var(--black-shade-title);
 }
 
 #subtitle {
