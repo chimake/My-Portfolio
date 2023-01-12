@@ -48,7 +48,7 @@ a#img_link {
   justify-content: center;
   align-items: center;
   background-image: url("../images/header-shapes-mobile@2x.svg");
-  background-color: var(--white-shade-background);
+  background-color: var(--white-color);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
