@@ -25,7 +25,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
-- <!-- About Me -->
+<!-- About Me -->
 <a name="about-me"></a>
 <!-- PROJECT DESCRIPTION -->
 
