@@ -73,7 +73,7 @@ a#img_link {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: var(--blue-shade-text);
+  color: var(--black-shade-title);
 }
 
 .subtitle {
@@ -89,7 +89,7 @@ a#img_link {
   font-size: 16px;
   line-height: 44px;
   text-align: left;
-  color: var(--blue-shade-text);
+  color: var(--black-shade-title);
   margin: 0px 0px 0px 10px;
 }
 
