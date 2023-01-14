@@ -69,6 +69,7 @@ a#img_link {
 }
 
 .title {
+  margin: 10px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -93,13 +94,13 @@ a#img_link {
 }
 
 .social_links ul {
+  display: flex;
   list-style: none;
   margin: 0px 0px 0px 10px;
   padding: 0;
 }
 
 .social_links ul li {
-  display: inline;
   margin: -5px;
 }
 
@@ -123,13 +124,14 @@ a#img_link {
 }
 
 .card {
+  height: 98vh;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
   border: 1px solid var(--white-shade-2);
   border-radius: 16px;
-  padding: 10px;
-  margin: 10px;
+  padding: 6px;
+  margin: 0px;
   background-color: var(--white-color);  
 }
 
@@ -140,6 +142,7 @@ a#img_link {
 }
 
 .project_title {
+  width: 295px;
   display: flex;
   justify-items: start;
   font-weight: 700;
@@ -265,6 +268,10 @@ a#img_link {
 
 #profile_breakdown li {
   list-style: none;
+}
+
+.about_social_links{
+  margin: 10px;
 }
 
 .about_social_links ul {
