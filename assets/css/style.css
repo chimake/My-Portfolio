@@ -20,7 +20,7 @@
   margin: 0;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -83,7 +83,7 @@ a#img_link {
   margin: 0px 0px 0px 10px;
 }
 
-.mini_title{
+.mini_title {
   font-weight: 700;
   font-size: 16px;
   line-height: 44px;
@@ -92,18 +92,18 @@ a#img_link {
   margin: 0px 0px 0px 10px;
 }
 
-.social_links ul{
+.social_links ul {
   list-style: none;
   margin: 0px 0px 0px 10px;
   padding: 0;
 }
 
-.social_links ul li{
+.social_links ul li {
   display: inline;
   margin: -5px;
 }
 
-.social_links ul li{
+.social_links ul li {
   display: flex;
   margin: -5px;
 }
@@ -112,7 +112,7 @@ a#img_link {
   padding: 10px;
 }
 
-#works{
+#works {
   height: 100%;
   background-color: var(--white-shade-1);
   padding: 16px;
@@ -122,7 +122,7 @@ a#img_link {
   justify-content: space-around;
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -133,13 +133,13 @@ a#img_link {
   background-color: var(--white-color);  
 }
 
-.project_description{
+.project_description {
   width: 295px;
   height: 36px;
   line-height: 44px;
 }
 
-.project_title{
+.project_title {
   display: flex;
   justify-items: start;
   font-weight: 700;
@@ -149,7 +149,7 @@ a#img_link {
   margin: 10px;
 }
 
-.project_text{
+.project_text {
   display: flex;
   flex-direction: row;
   font-weight: 400;
@@ -159,11 +159,11 @@ a#img_link {
   margin: 10px;
 }
 
-.project_summary .project_stack{
+.project_summary .project_stack {
   display: flex;  
 }
 
-.summary_list{
+.summary_list {
   width: auto;
   height: 32px;
   list-style: disc;
@@ -171,11 +171,11 @@ a#img_link {
   justify-content: space-between;
 }
 
-.project_summary .summary_list .no_disc{
+.project_summary .summary_list .no_disc {
   list-style: none;
 }
 
-.summary_list .summary_list_item{
+.summary_list .summary_list_item {
   padding: 5px;
   margin: 10px;
   font-weight: 600;
@@ -185,7 +185,7 @@ a#img_link {
   text-transform: capitalize;
 }
 
-.stack_list{
+.stack_list {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -193,7 +193,7 @@ a#img_link {
   width: 203px;
 }
 
-.stack_list .stack_list_item{
+.stack_list .stack_list_item {
   padding: 4px 12px;
   background: var(--white-shade-3);
   border-radius: 8px;
@@ -202,7 +202,7 @@ a#img_link {
   line-height: 16px;
 }
 
-#about_me{
+#about_me {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -212,7 +212,7 @@ a#img_link {
   padding: 50px 30px;
 }
 
-.cta_btn{
+.cta_btn {
   width: 162px;
   height: 48px;
   display: grid;
@@ -246,7 +246,7 @@ a#img_link {
   color: var(--grey-shade-btn-diabled);
 }
 
-.cta_text{
+.cta_text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,58 +258,58 @@ a#img_link {
   color: var(--blue-shade-1);
 }
 
-#profile_breakdown{
+#profile_breakdown {
   margin:10px;
   background-color: var(--white-color);
 }
 
-#profile_breakdown li{
+#profile_breakdown li {
   list-style: none;
 }
 
-.about_social_links ul{
+.about_social_links ul {
   list-style: none;
   margin: 0px 0px 0px 10px;
   padding: 0;
 }
 
-.about_social_links .social_icons{
+.about_social_links .social_icons {
   display: flex;
   margin: -5px;
 }
 
-#git_icon{
+#git_icon {
   order: -4;
 }
 
-#linkedin_icon{
+#linkedin_icon {
   order: -3;
 }
 
-#angelist_icon{
+#angelist_icon {
   order: -1;
 }
 
-.breakdown_list{
+.breakdown_list {
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: space-between;
 }
 
-.breakdown_list_item{
+.breakdown_list_item {
   flex: 1 1 auto;
   padding: 20px;
 }
 
-.breakdown_list .active{
+.breakdown_list .active {
   border-bottom: 0px;
   padding: 20px;
 }
-.active .accordio_cta{
+.active .accordio_cta {
   border-bottom: 0px;  
 }
-.accordio_cta{
+.accordio_cta {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -319,20 +319,20 @@ a#img_link {
   line-height: 24px;
 }
 
-.breakdown_list_children{
+.breakdown_list_children {
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: space-between;
 }
 
-.breakdown_list_children_item{
+.breakdown_list_children_item {
   flex: 1 1 auto;
   padding: 5px;
   border-radius: 8px;
 }
 
-.breakdown_list_children_item img{
+.breakdown_list_children_item img {
   padding: 5px;
   margin: 5px;
   background: var(--white-shade-background);
