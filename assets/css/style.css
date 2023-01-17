@@ -125,10 +125,6 @@ a#img_link {
   order: -1;
 }
 
-/* .about_social_links ul li{
-  margin: -5px;
-} */
-
 .icon_image {
   padding: 10px;
 }
@@ -335,4 +331,103 @@ a#img_link {
   margin: 5px;
   background: #F7F7F9;
   border-radius: 8px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#contact {
+  background-color: #6070FF;
+  background-image: url(../images/contactformshapesmobile@2x.png);
+  background-position: right top;
+  background-size: contain;
+  background-repeat: repeat-y;
+  border-top-left-radius: 90px;
+}
+
+#contact_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+  width: 327px;
+}
+
+#contact_me_header {
+  width: 801px;
+  height: 56px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #FFFFFF;
+  padding-top: 50px;
+}
+
+#contact_me_subtitle {
+  width: 327px;
+  height: 102px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #EBEBFF;
+  padding-top: 10px;
+}
+
+#contact_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+  text-align: center;
+}
+
+.input_text {
+  width: 302px;
+  height: 48px;
+  background: #fff;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.input_textarea {
+  width: 302px;
+  height: 170px;
+  background: #fff;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-left: 30px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -10px;
+  margin-left: 30px;
+  padding: 12px 16px;
+}
+
+.btn_submit {
+  color: #6070FF;
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: none;
 }
