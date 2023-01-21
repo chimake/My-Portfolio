@@ -62,13 +62,6 @@ header.toolbar .container {
   background-color: #fff;
 }
 
-header.toolbar .container a {
-  color: #6070ff;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-}
-
 .about-me-more li a {
   display: flex;
   align-items: center;
@@ -91,6 +84,13 @@ header.toolbar .container a {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+}
+
+header.toolbar .container a {
+  color: #6070ff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .connect ul {
@@ -482,7 +482,6 @@ main section .media-body .description p {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    font-weight: 500;
   }
 
   .desktop-bg {
@@ -556,7 +555,13 @@ main section .media-body .description p {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    color: #091E42;
+    color: #091e42;
+  }
+
+  .contact-me .wrapper p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   main section .media-body .description p {
@@ -590,12 +595,6 @@ main section .media-body .description p {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-  }
-
-  .contact-me .wrapper p {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
   }
 
   .contact-me .wrapper {
