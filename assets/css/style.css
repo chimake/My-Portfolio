@@ -62,6 +62,13 @@ header.toolbar .container {
   background-color: #fff;
 }
 
+header.toolbar .container a {
+  color: #6070ff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
 .about-me-more li a {
   display: flex;
   align-items: center;
@@ -194,10 +201,11 @@ h1 {
 }
 
 .media-body .role span {
-  font-weight: 600;
-  font-size: 13px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
   line-height: 16px;
-  color: #7a869a;
+  color: #6b778c;
   display: flex;
 }
 
@@ -207,6 +215,9 @@ h1 {
 }
 
 .media-body .role span:first-child {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
   color: #344563;
 }
 
@@ -471,6 +482,7 @@ main section .media-body .description p {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
+    font-weight: 500;
   }
 
   .desktop-bg {
@@ -493,9 +505,9 @@ main section .media-body .description p {
   }
 
   .main h1 {
+    font-weight: 700;
     font-size: 48px;
     line-height: 60px;
-    letter-spacing: 0.37px;
   }
 
   .main h1 span {
@@ -541,6 +553,17 @@ main section .media-body .description p {
 
   .media-body h4 {
     padding-top: 0.7rem;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091E42;
+  }
+
+  main section .media-body .description p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
   }
 
   .about-me-more {
@@ -561,6 +584,18 @@ main section .media-body .description p {
 
   .contact-me {
     padding: 2rem 3rem 3rem;
+  }
+
+  .contact-me .wrapper h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .contact-me .wrapper p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .contact-me .wrapper {
