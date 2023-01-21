@@ -39,7 +39,7 @@ ul {
   display: flex;
   height: calc(100vh - 64px);
   align-items: center;
-  background: #fff url("../images/Headerbg@2x.png") no-repeat center center;
+  background: #fff url("./assets/img/header-shapes.svg") no-repeat center center;
   background-size: contain;
   margin-left: -1rem;
   margin-right: -1rem;
@@ -84,18 +84,6 @@ header.toolbar .container {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-}
-
-.about-me-more .read-more a {
-  white-space: nowrap;
-  width: 165px;
-}
-
-header.toolbar .container a {
-  color: #6070ff;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
 }
 
 .connect ul {
@@ -176,6 +164,11 @@ h1 {
   cursor: pointer;
 }
 
+.media-img:hover img {
+  transform: scale(1.095);
+  transition: transform 500ms;
+}
+
 .media .media-img {
   display: flex;
   width: 100%;
@@ -206,11 +199,10 @@ h1 {
 }
 
 .media-body .role span {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+  font-weight: 600;
+  font-size: 13px;
   line-height: 16px;
-  color: #6b778c;
+  color: #7a869a;
   display: flex;
 }
 
@@ -220,9 +212,6 @@ h1 {
 }
 
 .media-body .role span:first-child {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
   color: #344563;
 }
 
@@ -254,6 +243,11 @@ main section .media-body .description p {
   font-size: 15px;
   line-height: 24px;
   color: #172b4d;
+}
+
+.contact-me .wrapper p:hover {
+  transform: translate(42px, 0);
+  transition: transform 1s ease;
 }
 
 .media-body .skills {
@@ -301,6 +295,11 @@ main section .media-body .description p {
 
 .about-me-more .connect ul li {
   margin-right: 0;
+}
+
+.about-me-more .read-more a {
+  white-space: nowrap;
+  width: 165px;
 }
 
 .about-me-more .connect ul li a {
@@ -362,7 +361,7 @@ main section .media-body .description p {
 }
 
 .contact-me .wrapper {
-  background-image: url("../images/contactformbackgroundshapes@2x.png");
+  background-image: url("./assets/img/contact-form.svg");
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -430,6 +429,7 @@ main section .media-body .description p {
 .about-me-more .read-more a:focus,
 .about-me-more .read-more a:hover {
   color: #fff;
+  transition: color 500ms ease;
 }
 
 .contact-me form button:hover,
@@ -437,12 +437,14 @@ main section .media-body .description p {
 .about-me-more .read-more a:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
+  transition: all 500ms ease;
 }
 
 .contact-me form button:focus,
 .media .read-more a:focus,
 .about-me-more .read-more a:focus {
   background: #2230d2;
+  transition: all ease-in-out 500ms;
 }
 
 @media screen and (min-width: 768px) {
@@ -494,7 +496,7 @@ main section .media-body .description p {
 
   .main {
     margin: 0;
-    background: url("../images/Headerbg@2x.png") no-repeat center center;
+    background: url("./assets/img/header-bg.svg") no-repeat center center;
     background-size: contain;
   }
 
@@ -504,9 +506,9 @@ main section .media-body .description p {
   }
 
   .main h1 {
-    font-weight: 700;
     font-size: 48px;
     line-height: 60px;
+    letter-spacing: 0.37px;
   }
 
   .main h1 span {
@@ -552,23 +554,6 @@ main section .media-body .description p {
 
   .media-body h4 {
     padding-top: 0.7rem;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    color: #091e42;
-  }
-
-  .contact-me .wrapper p {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-  main section .media-body .description p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #344563;
   }
 
   .about-me-more {
@@ -591,18 +576,12 @@ main section .media-body .description p {
     padding: 2rem 3rem 3rem;
   }
 
-  .contact-me .wrapper h3 {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-  }
-
   .contact-me .wrapper {
     background: none;
   }
 
   .contact-me .wrapper > div {
-    background-image: url("../images/contactformbackgroundshapes@2x.png");
+    background-image: url("./assets/img/contact-form-bg.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -657,5 +636,15 @@ main section .media-body .description p {
     font-size: 15px;
     line-height: 20px;
     color: #253858;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }
