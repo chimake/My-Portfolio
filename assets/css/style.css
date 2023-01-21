@@ -86,6 +86,11 @@ header.toolbar .container {
   line-height: 24px;
 }
 
+.about-me-more .read-more a {
+  white-space: nowrap;
+  width: 165px;
+}
+
 header.toolbar .container a {
   color: #6070ff;
   font-weight: 700;
@@ -296,11 +301,6 @@ main section .media-body .description p {
 
 .about-me-more .connect ul li {
   margin-right: 0;
-}
-
-.about-me-more .read-more a {
-  white-space: nowrap;
-  width: 165px;
 }
 
 .about-me-more .connect ul li a {
