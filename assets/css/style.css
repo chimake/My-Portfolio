@@ -496,7 +496,7 @@ main section .media-body .description p {
 
   .main {
     margin: 0;
-    background: url("./assets/img/header-bg.svg") no-repeat center center;
+    background: url("../images/Headerbg@2x.png") no-repeat center center;
     background-size: contain;
   }
 
@@ -581,7 +581,7 @@ main section .media-body .description p {
   }
 
   .contact-me .wrapper > div {
-    background-image: url("./assets/img/contact-form-bg.svg");
+    background-image: url("../images/contactformbackgroundshapes@2x.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
