@@ -69,7 +69,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link]([https://chimake.github.io/Hello-world/](https://chimake.github.io/My-Portfolio/))
+- [Live Demo Link](<a href="https://git-scm.com/">My Portfolio</a> )
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
