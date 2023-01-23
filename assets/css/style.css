@@ -39,7 +39,7 @@ ul {
   display: flex;
   height: calc(100vh - 64px);
   align-items: center;
-  background: #fff url("./assets/img/header-shapes.svg") no-repeat center center;
+  background: #fff url("../images/header-shapes-mobile@2x.svg") no-repeat center center;
   background-size: contain;
   margin-left: -1rem;
   margin-right: -1rem;
@@ -361,7 +361,7 @@ main section .media-body .description p {
 }
 
 .contact-me .wrapper {
-  background-image: url("./assets/img/contact-form.svg");
+  background-image: url("../images/contactformshapesmobile@2x.png");
   background-repeat: no-repeat;
   background-position: top right;
 }
