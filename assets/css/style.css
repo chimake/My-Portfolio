@@ -123,16 +123,15 @@ header.toolbar .menu-container {
   margin-left: 30px;
 }
 
-.mobile-link-item{
+.mobile-link-item {
   text-decoration: none;
-  font-family: 'Poppins',sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 header.toolbar img {
