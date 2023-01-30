@@ -90,8 +90,49 @@ header.toolbar .container {
   display: flex;
 }
 
-header.toolbar nav > ul {
+header.toolbar nav > .desktop {
   display: none;
+}
+
+.blur {
+  filter: blur(4.5px);
+}
+
+header.toolbar .menu-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #6070ff;
+  opacity: 0.9;
+}
+
+.menu-hamburger {
+  display: flex;
+  justify-content: end;
+  margin-right: 15%;
+  margin-top: 15%;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 30px;
+}
+
+.mobile-link-item{
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
 }
 
 header.toolbar img {
