@@ -4,7 +4,6 @@ const sections = document.querySelectorAll('section');
 const menuContainer = document.querySelector('.menu-container');
 const mobileLinKItem = document.querySelectorAll('.mobile-link-item');
 
-
 function sectionFunc() {
   for (let i = 0; i < sections.length; i += 1) {
     sections[i].classList.remove('blur');
