@@ -161,10 +161,12 @@ function fetchPortfolio() {
   } //end of for loop
 
   let buttons = document.querySelectorAll('.read-more a');
+  let toolbar = document.querySelector('.toolbar');
 
   for (let i = 0; i < buttons.length; i += 1) {
     buttons[i].addEventListener('click', function () {
       header.classList.add('blur');
+      toolbar.style.display = 'none';
       about.style.display = 'none';
       contact.style.display = 'none';
       portfolio.style.display = 'none';
@@ -184,8 +186,8 @@ function fetchPortfolio() {
       let divtitlecanopy = generateHtml('p', 'canopy');
       let divtitlebackend = generateHtml('p', 'backend');
       let divtitleyear = generateHtml('p', 'y15');
-      let divtitlecounter1 = new Image();
-      let divtitlecounter2 = new Image();
+      let divtitlecounter1 = generateHtml('i','dot');
+      let divtitlecounter2 = generateHtml('i','dot');
       let divtitlecancel = new Image();
       let frametitle = generateHtml('div', 'frame-title');
       let framecanopy = generateHtml('div', 'frame-canopy');
@@ -205,8 +207,7 @@ function fetchPortfolio() {
 
       divtitle.appendChild(framecanopy);
 
-      divtitlecounter1.src = project[i].counter;
-      divtitlecounter1.className = "canopyimage";
+     
       framecanopy.appendChild(divtitlecounter1);
       divtitle.appendChild(framecanopy);
 
@@ -214,8 +215,7 @@ function fetchPortfolio() {
       addTextAppend(divtitlebackend, project[i].projectsummary[1], framecanopy);
       divtitle.appendChild(framecanopy);
 
-      divtitlecounter2.src = project[i].counter;
-      divtitlecounter2.className = "canopyimage";
+      
       framecanopy.appendChild(divtitlecounter2);
       divtitle.appendChild(framecanopy);
 
@@ -240,12 +240,10 @@ function fetchPortfolio() {
       let divbottomlanguage = generateHtml('ul', 'bottom-list');
       for (let x = 0; x < project[i].technologies.length; x += 1) {
         let divbottomlanguageListitem = document.createElement('li');
-        let cs = "cs-1";
-        let ht = "ht-1";
-        let js = "js-1";
+        let cs = "modal-list";
         if (project[i].technologies[x] === "html") {
           divbottomlanguageListitem.textContent = project[i].technologies[x];
-          divbottomlanguageListitem.className = ht;
+          divbottomlanguageListitem.className = cs;
 
         } else if (project[i].technologies[x] === "css") {
           divbottomlanguageListitem.textContent = project[i].technologies[x];
@@ -253,7 +251,7 @@ function fetchPortfolio() {
 
         } else if (project[i].technologies[x] === "javascript") {
           divbottomlanguageListitem.textContent = project[i].technologies[x];
-          divbottomlanguageListitem.className = js;
+          divbottomlanguageListitem.className = cs;
 
         }
 
@@ -286,6 +284,7 @@ function fetchPortfolio() {
       let c = document.querySelector('.portfolio1cancel');
       c.addEventListener('click', () => {
         header.classList.remove('blur');
+        toolbar.style.display = 'block';
         about.style.display = 'block';
         contact.style.display = 'block';
         portfoliopopup.style.display = 'none';
