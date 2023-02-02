@@ -28,7 +28,7 @@ for (let i = 0; i < mobileLinKItem.length; i += 1) {
 const project = [{
   name: "Tonic",
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-  longdescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+  longdescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
   imagesource: "assets/images/SnapshootPortfolio.png",
   altmessage: "project1",
   technologies: ['html', 'css', 'javascript'],
@@ -43,7 +43,7 @@ const project = [{
 {
   name: "Multi-Post Stories",
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-  longdescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+  longdescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
   imagesource: "assets/images/SnapshootPortfolio2.png",
   altmessage: "project2",
   technologies: ['html', 'css', 'javascript'],
@@ -57,7 +57,7 @@ const project = [{
 {
   name: "Tonic",
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-  longdescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+  longdescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
   imagesource: "assets/images/GymfitSnapshootPortfolio.png",
   altmessage: "project3",
   technologies: ['html', 'css', 'javascript'],
@@ -73,8 +73,8 @@ const project = [{
 {
   name: "Multi-Post Stories",
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-  longdescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-  imagesource: "assests/images/ProfessionalSnapshootPortfolio.png",
+  longdescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  imagesource: "assets/images/ProfessionalSnapshootPortfolio.png",
   altmessage: "project4",
   technologies: ['html', 'css', 'javascript'],
   projectsummary: ['CANOPY', 'Back end dev', '2015'],
@@ -91,12 +91,18 @@ const header = document.querySelector('#works');
 const about = document.querySelector('#about-me-more');
 const contact = document.querySelector('#contact-me');
 const portfolio = document.querySelector('#portfolio');
-// const portfoliopopup = document.querySelector('.portfolio-popup');
+const portfoliopopup = document.querySelector('.portfolio-popup');
 
 function generateHtml(tag, tagClassName) {
   tag = document.createElement(tag);
   tag.className = tagClassName;
   
+  return tag;
+}
+
+function addTextAppend(tag, text, parent) {
+  tag.textContent = text;
+  parent.appendChild(tag);
   return tag;
 }
 
@@ -108,8 +114,8 @@ function fetchPortfolio() {
     let mediaImg = generateHtml('div',mediaDivClasses[i]);
     let mediaImgTag = new Image();
     // Add image
-    mediaImgTag.src = "";
-    mediaImgTag.alt = "";
+    mediaImgTag.src = project[i].imagesource;
+    mediaImgTag.alt = project[i].altmessage;
     let divMediaBody = generateHtml('div','media-body');
     let portfolioHeader = generateHtml('h4');
     let divRoleSummary = generateHtml('div','role');
@@ -121,101 +127,42 @@ function fetchPortfolio() {
     let divDescription = generateHtml('div','description');
     let paragraphDescription = generateHtml('p');
     let ulSkills = generateHtml('ul','skills');
-    let liSkills = generateHtml('li');
+    let liSkills1 = generateHtml('li');
+    let liSkills2 = generateHtml('li');
+    let liSkills3 = generateHtml('li');
     let divReadmore = generateHtml('div','read-more');
     let readMeMoreAnchor = document.createElement('a');
     readMeMoreAnchor.href = "#";
 
-    let divSnapshot = generateHtml('div', 'snapshot');
-    let divLeftblock = generateHtml('div', 'left-block1');
-    let image = new Image();
-    let divLeftBLockText = generateHtml('div', 'l-block1-text');
-    let divLeftBLockTextHead = generateHtml('div', 'Text2');
-    let divLeftBLockTextyear = generateHtml('div', 'year');
-    let divLeftBLockCanopy = generateHtml('div', 'div1-can');
-    let LeftBLockCanopy = generateHtml('p', 'canopy');
-    let divLeftBLockSeparator1 = generateHtml('div', 'portfolio-separtor portfolio-separtor-1');
-    let divLeftBLockSeparator2 = generateHtml('div', 'portfolio-separtor portfolio-separtor-3');
-    let divLeftBLockBackend = generateHtml('div', 'div3-back');
-    let LeftBLockBackend = generateHtml('p', 'backend');
-    let divLeftBLockY15 = generateHtml('div', 'div5-y15');
-    let LeftBLockY15 = generateHtml('p', 'y15');
-    let divLeftBLockDescription = generateHtml('div', 'description');
-    let divLeftBLockLanguageList = generateHtml('div', 'lang');
-    let divLeftBLockButton = generateHtml('div', 'butt');
-    let LeftBLockButton = generateHtml('button', 'Acbutt');
-    image.src = project[i].imagesource;
-    image.alt = project[i].altmessage;
-
-    // if (i % 2 === 0) {
-    //   article.classList.toggle('con-1');
-    // }
-
     portfolio.appendChild(article);
-    divSnapshot.appendChild(image);
+    article.appendChild(mediaImg);
+    mediaImg.appendChild(mediaImgTag);
+    article.appendChild(divMediaBody);
+    addTextAppend(portfolioHeader, project[i].name, divMediaBody);
+    divMediaBody.appendChild(divRoleSummary);
+    addTextAppend(span1, project[i].projectsummary[0],divRoleSummary);
+    divRoleSummary.appendChild(spanDot1);
+    addTextAppend(span2, project[i].projectsummary[1], divRoleSummary);
+    divRoleSummary.appendChild(spanDot2);
+    addTextAppend(span3, project[i].projectsummary[2], divRoleSummary);
+    divMediaBody.appendChild(divDescription);
+    addTextAppend(paragraphDescription, project[i].description, divDescription);
+    divMediaBody.appendChild(ulSkills);
+    addTextAppend(liSkills1, project[i].technologies[0], ulSkills);
+    addTextAppend(liSkills2, project[i].technologies[1], ulSkills);
+    addTextAppend(liSkills3, project[i].technologies[2], ulSkills);
+    divMediaBody.appendChild(divReadmore);
+    addTextAppend(readMeMoreAnchor, project[i].buttontext, divReadmore);
 
-    div.appendChild(divSnapshot);
-    div.appendChild(divLeftblock);
 
 
-    divLeftblock.appendChild(divLeftBLockText);
 
-    addTextAppend(divLeftBLockTextHead, project[i].name, divLeftBLockText);
-
-    divLeftBLockText.appendChild(divLeftBLockTextyear);
-
-    divLeftBLockTextyear.appendChild(divLeftBLockCanopy);
-
-    addTextAppend(LeftBLockCanopy, project[i].projectsummary[0], divLeftBLockCanopy);
-
-    divLeftBLockTextyear.appendChild(divLeftBLockSeparator1);
-
-    divLeftBLockBackend.className = "div3-back";
-    divLeftBLockTextyear.appendChild(divLeftBLockBackend);
-
-    LeftBLockBackend.textContent = project[i].projectsummary[1];
-    divLeftBLockBackend.appendChild(LeftBLockBackend);
-
-    divLeftBLockTextyear.appendChild(divLeftBLockSeparator2);
-
-    divLeftBLockTextyear.appendChild(divLeftBLockY15);
-
-    addTextAppend(LeftBLockY15, project[i].projectsummary[2], divLeftBLockY15);
-
-    addTextAppend(divLeftBLockDescription, project[i].description, divLeftblock);
-
-    for (let x = 0; x < project[i].technologies.length; x += 1) {
-      let divLeftBLockLanguageListitem = document.createElement('li');
-      let cs = "cs-1";
-      let ht = "ht-1";
-      let js = "js-1";
-      if (project[i].technologies[x] === "html") {
-        divLeftBLockLanguageListitem.textContent = project[i].technologies[x];
-        divLeftBLockLanguageListitem.className = ht;
-
-      } else if (project[i].technologies[x] === "css") {
-        divLeftBLockLanguageListitem.textContent = project[i].technologies[x];
-        divLeftBLockLanguageListitem.className = cs;
-
-      } else if (project[i].technologies[x] === "javascript") {
-        divLeftBLockLanguageListitem.textContent = project[i].technologies[x];
-        divLeftBLockLanguageListitem.className = js;
-
-      }
-      divLeftBLockLanguageList.appendChild(divLeftBLockLanguageListitem);
-    }
-
-    divLeftblock.appendChild(divLeftBLockLanguageList);
-    div.appendChild(divLeftblock);
-
-    addTextAppend(LeftBLockButton, project[i].buttontext, divLeftBLockButton);
-    divLeftblock.appendChild(divLeftBLockButton);
 
   } //end of for loop
 
-  let buttons = document.querySelectorAll('.Acbutt');
+  let buttons = document.querySelectorAll('.read-more a');
 
-  for (let i = 0; i < buttons.length; i++) {
+  for (let i = 0; i < buttons.length; i += 1) {
     buttons[i].addEventListener('click', function () {
       header.classList.add('blur');
       about.style.display = 'none';
@@ -339,8 +286,8 @@ function fetchPortfolio() {
       let c = document.querySelector('.portfolio1cancel');
       c.addEventListener('click', () => {
         header.classList.remove('blur');
-        about.style.display = 'flex';
-        contact.style.display = 'flex';
+        about.style.display = 'block';
+        contact.style.display = 'block';
         portfoliopopup.style.display = 'none';
         portfolio.style.display = 'grid';
         popupdiv.remove();
