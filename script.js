@@ -313,3 +313,24 @@ contactForm.addEventListener('submit', (event) => {
     contactForm.submit();
   }
 });
+
+const name1 = contactForm.querySelector('#name');
+const email = contactForm.querySelector('#email');
+const feedback = contactForm.querySelector('#message');
+let userdata = {};
+let stringifydata = "";
+
+if (!localStorage.getItem('storeddata')) {
+  populateStorage();
+} else {
+  setValue();
+}
+
+function setValue() {
+  const currentstoreddata = localStorage.getItem('storeddata');
+  const currentuserdata = JSON.parse(currentstoreddata);
+
+  name1.value = currentuserdata.name;
+  email.value = currentuserdata.email;
+  feedback.value = currentuserdata.feedback;
+}
