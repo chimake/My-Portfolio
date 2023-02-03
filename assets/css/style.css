@@ -94,10 +94,6 @@ header.toolbar nav > .desktop {
   display: none;
 }
 
-.blur {
-  filter: blur(4.5px);
-}
-
 header.toolbar .menu-container {
   display: none;
   position: fixed;
@@ -134,8 +130,18 @@ header.toolbar .menu-container {
   color: #fff;
 }
 
+.projectbutton img {
+  width: 18px;
+  height: 20px;
+}
+
 header.toolbar img {
   width: 1.875rem;
+}
+
+.media-img:hover img {
+  transform: scale(1.095);
+  transition: transform 500ms;
 }
 
 h1 {
@@ -202,11 +208,6 @@ h1 {
   border-radius: 16px;
   margin: 4rem 0;
   cursor: pointer;
-}
-
-.media-img:hover img {
-  transform: scale(1.095);
-  transition: transform 500ms;
 }
 
 .media .media-img {
@@ -487,6 +488,139 @@ main section .media-body .description p {
   transition: all ease-in-out 500ms;
 }
 
+.portfolio-popup {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+}
+
+.blur {
+  filter: blur(4.5px);
+}
+
+.div-button {
+  display: flex;
+  gap: 4%;
+}
+
+.projectbutton {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+  align-content: center;
+  width: 142px;
+  height: 40px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  color: #396df2;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.popup-div {
+  width: 80%;
+  background: #fff;
+  border: 1px solid #ebecf0;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  border-radius: 16px;
+}
+
+.popup-image {
+  width: 100%;
+}
+
+.div-title {
+  padding-right: 4%;
+  padding-left: 4%;
+}
+
+.div-top {
+  padding-right: 4%;
+  padding-left: 4%;
+}
+
+.div-bottom {
+  display: flex;
+  flex-direction: column;
+  padding-right: 4%;
+  padding-left: 4%;
+}
+
+.frame-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio1cancel {
+  height: 24px;
+  margin-top: 25px;
+  width: 24px;
+}
+
+.frame-canopy {
+  display: flex;
+}
+
+.canopyimage {
+  margin-top: 16px;
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 8px;
+}
+
+.frame-language {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.popup-description {
+  width: 100%;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.bottom-list {
+  display: flex;
+  padding-left: 0;
+  gap: 4%;
+}
+
+.dot {
+  margin-top: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 8px;
+  height: 8px;
+  background: #c1c7d0;
+  flex: none;
+  border-radius: 50%;
+}
+
+.modal-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  color: #6070ff;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  background: #ebebff;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 10px;
+}
+
 @media screen and (min-width: 768px) {
   #works {
     display: unset;
@@ -676,6 +810,107 @@ main section .media-body .description p {
     font-size: 15px;
     line-height: 20px;
     color: #253858;
+  }
+
+  .portfolio-popup {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+  }
+
+  .div-button {
+    display: flex;
+    gap: 4%;
+  }
+
+  .projectbutton {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+    align-content: center;
+    width: 142px;
+    height: 40px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    color: #396df2;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+
+  .popup-div {
+    width: 80%;
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+  }
+
+  .popup-image {
+    width: 100%;
+  }
+
+  .div-title {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+
+  .div-top {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+
+  .div-bottom {
+    display: flex;
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+
+  .frame-title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .portfolio1cancel {
+    height: 24px;
+    margin-top: 25px;
+  }
+
+  .frame-canopy {
+    display: flex;
+  }
+
+  .canopyimage {
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 8px;
+  }
+
+  .frame-language {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+  }
+
+  .popup-description {
+    width: 60%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+  }
+
+  .bottom-list {
+    display: flex;
+    padding-left: 0;
+    gap: 4%;
+    margin-bottom: 10px;
   }
 }
 
