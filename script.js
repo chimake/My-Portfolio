@@ -320,12 +320,6 @@ const feedback = contactForm.querySelector('#message');
 let userdata = {};
 let stringifydata = "";
 
-if (!localStorage.getItem('storeddata')) {
-  populateStorage();
-} else {
-  setValue();
-}
-
 function setValue() {
   const currentstoreddata = localStorage.getItem('storeddata');
   const currentuserdata = JSON.parse(currentstoreddata);
@@ -334,3 +328,22 @@ function setValue() {
   email.value = currentuserdata.email;
   feedback.value = currentuserdata.feedback;
 }
+
+function populateStorage() {
+  userdata.name = contactForm.querySelector('#name').value;
+  userdata.email = contactForm.querySelector('#email').value;
+  userdata.feedback = contactForm.querySelector('#message').value;
+  stringifydata = JSON.stringify(userdata);
+  localStorage.setItem('storeddata', stringifydata);
+  setValue();
+}
+
+if (!localStorage.getItem('storeddata')) {
+  populateStorage();
+} else {
+  setValue();
+}
+
+name1.onkeyup = populateStorage;
+email.onkeyup = populateStorage;
+feedback.onkeyup = populateStorage;
