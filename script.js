@@ -295,7 +295,7 @@ function showSuccess() {
   return true;
 }
 
-function validateEmail (email, message) {
+function validateEmail(email, message) {
   const regex = /^[a-z]+@[a-z]+\.[a-z]+$/;
   const emailValue = email.value;
   if (!regex.test(emailValue)) {
