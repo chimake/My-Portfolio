@@ -313,3 +313,37 @@ contactForm.addEventListener('submit', (event) => {
     contactForm.submit();
   }
 });
+
+const name1 = contactForm.querySelector('#name');
+const email = contactForm.querySelector('#email');
+const feedback = contactForm.querySelector('#message');
+const userdata = {};
+let stringifydata = '';
+
+function setValue() {
+  const currentstoreddata = localStorage.getItem('storeddata');
+  const currentuserdata = JSON.parse(currentstoreddata);
+
+  name1.value = currentuserdata.name;
+  email.value = currentuserdata.email;
+  feedback.value = currentuserdata.feedback;
+}
+
+function populateStorage() {
+  userdata.name = contactForm.querySelector('#name').value;
+  userdata.email = contactForm.querySelector('#email').value;
+  userdata.feedback = contactForm.querySelector('#message').value;
+  stringifydata = JSON.stringify(userdata);
+  localStorage.setItem('storeddata', stringifydata);
+  setValue();
+}
+
+if (!localStorage.getItem('storeddata')) {
+  populateStorage();
+} else {
+  setValue();
+}
+
+name1.onkeyup = populateStorage;
+email.onkeyup = populateStorage;
+feedback.onkeyup = populateStorage;
