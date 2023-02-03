@@ -317,8 +317,8 @@ contactForm.addEventListener('submit', (event) => {
 const name1 = contactForm.querySelector('#name');
 const email = contactForm.querySelector('#email');
 const feedback = contactForm.querySelector('#message');
-let userdata = {};
-let stringifydata = "";
+const userdata = {};
+let stringifydata = '';
 
 function setValue() {
   const currentstoreddata = localStorage.getItem('storeddata');
