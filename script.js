@@ -281,3 +281,17 @@ window.addEventListener('load', () => {
     });
   }
 });
+
+function validateEmail (email, message) {
+  const regex = /^[a-z]+@[a-z]+\.[a-z]+$/;
+  const emailValue = email.value;
+  if (regex.test(emailValue)) {
+    return showSuccess();
+  }
+  return showError();
+}
+
+const contactForm = document.querySelector('#contactForm');
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+});
