@@ -282,7 +282,6 @@ window.addEventListener('load', () => {
   }
 });
 
-
 function showError(message) {
   const msg = document.querySelector('.error');
   msg.innerText = message;
@@ -290,7 +289,7 @@ function showError(message) {
 }
 
 function showSuccess() {
-  const noError = "";
+  const noError = '';
   const msg = document.querySelector('.error');
   msg.innerText = noError;
   return true;
@@ -301,20 +300,16 @@ function validateEmail (email, message) {
   const emailValue = email.value;
   if (!regex.test(emailValue)) {
     return showError(message);
-
   }
   return showSuccess();
 }
 
 const contactForm = document.querySelector('#contactForm');
-const invalidMessage = "Wrong email format ensure the email is in lower case"
+const invalidMessage = 'Wrong email format ensure the email is in lower case';
 contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
-
-  const checkEmail = validateEmail(contactForm.querySelector('#email'),invalidMessage);
-
-  if(checkEmail){
+  const checkEmail = validateEmail(contactForm.querySelector('#email'), invalidMessage);
+  if (checkEmail) {
     contactForm.submit();
   }
-
 });
