@@ -494,6 +494,8 @@ main section .media-body .description p {
   justify-content: center;
   top: 0;
   width: 100%;
+  padding-top: 30px;
+  padding-right: 30px;
 }
 
 .blur {
