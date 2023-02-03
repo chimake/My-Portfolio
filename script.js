@@ -282,16 +282,39 @@ window.addEventListener('load', () => {
   }
 });
 
+
+function showError(message) {
+  const msg = document.querySelector('.error');
+  msg.innerText = message;
+  return false;
+}
+
+function showSuccess() {
+  const noError = "";
+  const msg = document.querySelector('.error');
+  msg.innerText = noError;
+  return true;
+}
+
 function validateEmail (email, message) {
   const regex = /^[a-z]+@[a-z]+\.[a-z]+$/;
   const emailValue = email.value;
-  if (regex.test(emailValue)) {
-    return showSuccess();
+  if (!regex.test(emailValue)) {
+    return showError(message);
+
   }
-  return showError();
+  return showSuccess();
 }
 
 const contactForm = document.querySelector('#contactForm');
+const invalidMessage = "Wrong email format ensure the email is in lower case"
 contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
+
+  const checkEmail = validateEmail(contactForm.querySelector('#email'),invalidMessage);
+
+  if(checkEmail){
+    contactForm.submit();
+  }
+
 });
