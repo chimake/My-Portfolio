@@ -102,112 +102,10 @@
           </div>
         </section>
         <section class="content" id="portfolio">
-          <article class="media">
-            <div class="media-img img-1">
-              <img src="assets/images/SnapshootPortfolio4.png" alt="Project Image" />
-            </div>
-            <div class="media-body">
-              <h4>Tonic</h4>
-              <div class="role">
-                <span>CANOPY</span>
-                <i></i>
-                <span>Backend Dev</span>
-                <i></i>
-                <span>2015</span>
-              </div>
-              <div class="description">
-                <p> A daily selection of privately personalized reads; no accounts or sign-ups required. </p>
-              </div>
-              <ul class="skills">
-                <li>html</li>
-                <li>css</li>
-                <li>javasript</li>
-              </ul>
-              <div class="read-more">
-                <a href="#"> See Project </a>
-              </div>
-            </div>
-          </article>
-          <article class="media">
-            <div class="media-img img-2">
-              <img src="assets/images/SnapshootPortfolio3.png" alt="Project Image" />
-            </div>
-            <div class="media-body">
-              <h4> Multi-Post <span> Stories</span>
-              </h4>
-              <div class="role">
-                <span>CANOPY</span>
-                <i></i>
-                <span>Backend Dev</span>
-                <i></i>
-                <span>2015</span>
-              </div>
-              <div class="description">
-                <p> A daily selection of privately personalized reads; no accounts or sign-ups required. </p>
-              </div>
-              <ul class="skills">
-                <li>html</li>
-                <li>css</li>
-                <li>javasript</li>
-              </ul>
-              <div class="read-more">
-                <a href="#"> See Project </a>
-              </div>
-            </div>
-          </article>
-          <article class="media">
-            <div class="media-img img-3">
-              <img src="assets/images/SnapshootPortfolio2.png" alt="Project Image" />
-            </div>
-            <div class="media-body">
-              <h4>Tonic</h4>
-              <div class="role">
-                <span>CANOPY</span>
-                <i></i>
-                <span>Backend Dev</span>
-                <i></i>
-                <span>2015</span>
-              </div>
-              <div class="description">
-                <p> A daily selection of privately personalized reads; no accounts or sign-ups required. </p>
-              </div>
-              <ul class="skills">
-                <li>html</li>
-                <li>css</li>
-                <li>javasript</li>
-              </ul>
-              <div class="read-more">
-                <a href="#"> See Project </a>
-              </div>
-            </div>
-          </article>
-          <article class="media">
-            <div class="media-img img-4">
-              <img src="assets/images/SnapshootPortfolio.png" alt="Project Image" />
-            </div>
-            <div class="media-body">
-              <h4>Multi-Post <span>Stories</span>
-              </h4>
-              <div class="role">
-                <span>CANOPY</span>
-                <i></i>
-                <span>Backend Dev</span>
-                <i></i>
-                <span>2015</span>
-              </div>
-              <div class="description">
-                <p> A daily selection of privately personalized reads; no accounts or sign-ups required. </p>
-              </div>
-              <ul class="skills">
-                <li>html</li>
-                <li>css</li>
-                <li>javasript</li>
-              </ul>
-              <div class="read-more">
-                <a href="#"> See Project </a>
-              </div>
-            </div>
-          </article>
+         
+        </section>
+        <section class="portfolio-popup">
+
         </section>
         
         <section id="about-me-more" class="about-me-more">
@@ -310,7 +208,7 @@
                 <div class="form-wrapper">
                   <h3>Contact me</h3>
                   <p> If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-                  <form action="https://formspree.io/f/xknagrrq" method="POST">
+                  <form action="https://formspree.io/f/xknagrrq" method="POST" id="contactForm">
                     <label for="name">
                       <input type="text" id="name" name="name" placeholder="Full name" maxlength="30" minlength="3" required />
                     </label>
@@ -320,6 +218,7 @@
                     <label for="message">
                       <textarea id="message" cols="30" name="message" rows="7" maxlength="500" minlength="5" required placeholder="Write your message here"></textarea>
                     </label>
+                    <p class="error"></p>
                     <button type="submit">Get in touch</button>
                   </form>
                 </div>
