@@ -292,27 +292,29 @@ main section .media-body .description p {
 }
 
 .media-body .skills {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
+  float: left;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* align-items: center; */
+  /* gap: 8px; */
   margin-bottom: 1rem;
   padding: 0;
 }
 
 .media-body .skills li {
-  display: flex;
+  display: inline;
   flex-direction: row;
   align-items: center;
   padding: 4px 12px;
   color: #6070ff;
-  letter-spacing: 0.03em;
+  /* letter-spacing: 0.03em; */
   font-weight: 500;
   font-size: 12px;
-  line-height: 16px;
+  /* line-height: 16px; */
   background: #ebebff;
   border-radius: 8px;
   border: none;
+  margin-right: 10px;
 }
 
 .about-me-more {
